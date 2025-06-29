@@ -1,0 +1,7 @@
+2025-01-08 11:47:10,115 [main] INFO selenium.Scripts.ExtentReportLog4j - report config for log4j
+2025-01-08 11:50:29,940 [main] INFO selenium.Scripts.ExtentReportLog4j - report config for log4j
+2025-01-08 11:55:44,711 [main] INFO selenium.Scripts.ExtentReportLog4j - report config for log4j
+2025-01-08 12:00:51,498 [main] INFO selenium.Scripts.ExtentReportLog4j - report config for log4j
+2025-01-08 12:01:12,814 [main] INFO selenium.Scripts.ExtentReportLog4j - Browser is launched Successfully of log4j
+2025-01-08 12:01:20,753 [main] INFO selenium.Scripts.ExtentReportLog4j - way 2 Automation url is hit of log4j
+2025-01-08 12:01:20,777 [main] INFO selenium.Scripts.ExtentReportLog4j - Title is matched :log4j
