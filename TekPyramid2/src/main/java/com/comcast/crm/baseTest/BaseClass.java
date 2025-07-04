@@ -20,7 +20,7 @@ import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
 import com.comcast.crm.objectrepositoryutility.HomePage;
 import com.comcast.crm.objectrepositoryutility.LoginPage;
 
-public class BaseClass {
+public class BaseClass {/*
 	public WebDriver driver=null;
 
 	
@@ -81,6 +81,7 @@ public class BaseClass {
 		dlib.closeDbConnection();
 		
 	}
+	*/
 	
 
 }

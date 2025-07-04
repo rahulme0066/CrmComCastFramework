@@ -44,7 +44,8 @@ public class BaseClass2 {
 	@BeforeClass(groups= {"smoke" ,"regression"})
 	public void configBc() throws IOException {
 		System.out.println("==Launch the Browser==");
-		String BROWSER = flib.getDataFromPropertyFile("Browser");
+		String BROWSER=System.getProperty("browser",flib.getDataFromPropertyFile("Browser"));
+//		String BROWSER = flib.getDataFromPropertyFile("Browser");
 		if(BROWSER.equals("Chrome")){
 			driver=new ChromeDriver();
 		}
@@ -61,9 +62,12 @@ public class BaseClass2 {
 	@BeforeMethod(groups= {"smoke" ,"regression"})
 	public void configBm() throws IOException {
 		System.out.println("==Login==");
-		 String URL = flib.getDataFromPropertyFile("Url");
-		 String USERNAME=flib.getDataFromPropertyFile("Username");
-		 String PASSWORD=flib.getDataFromPropertyFile("Password");
+		String URL =System.getProperty("url",flib.getDataFromPropertyFile("Url"));
+//		String URL = flib.getDataFromPropertyFile("Url");
+		String USERNAME =System.getProperty("username",flib.getDataFromPropertyFile("Username"));
+//		 String USERNAME=flib.getDataFromPropertyFile("Username");
+		String PASSWORD=System.getProperty("username",flib.getDataFromPropertyFile("Password"));
+//		 String PASSWORD=flib.getDataFromPropertyFile("Password");
 		 LoginPage lp=new LoginPage(driver);
 		 lp.loginToApp(URL, USERNAME, PASSWORD);
 

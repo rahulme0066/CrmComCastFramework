@@ -20,6 +20,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -36,7 +37,7 @@ import com.comcast.crm.objectrepositoryutility.HomePage;
 import com.comcast.crm.objectrepositoryutility.OrganizationPage;
 
 import junit.framework.Assert;
-
+@Listeners(com.comcast.crm.listenerutility.ListImpClass.class)
 public class CreateContactTest extends BaseClass2 {
 
 	@Test(groups = { "smoke" })
@@ -68,7 +69,7 @@ public class CreateContactTest extends BaseClass2 {
 
 	}
 
-//	@Test(groups= {"smoke" ,"regression"})
+	@Test(groups= {"smoke" ,"regression"})
 	public void createContactWithOrgTest() throws Throwable {
 
 		HomePage hp = new HomePage(driver);
