@@ -6,6 +6,6 @@ import org.openqa.selenium.support.FindBy;
 public class ProductPage {
 	
 	@FindBy(linkText = "link")
-	private WebElement el3;
+	private WebElement el4;
 
 }
