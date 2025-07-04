@@ -14,6 +14,10 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(linkText = "Email")
+	private WebElement emailLink;
+	
+	
 	@FindBy(linkText = "Products")
 	private WebElement productsLink;
 	
