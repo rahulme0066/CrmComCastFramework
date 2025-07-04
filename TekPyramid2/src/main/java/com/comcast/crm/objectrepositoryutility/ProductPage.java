@@ -8,4 +8,5 @@ public class ProductPage {
 	@FindBy(linkText = "link")
 	private WebElement el5;
 
+	
 }
