@@ -5,8 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProductPage {
 	
-	@FindBy(linkText = "link11")
-	private WebElement el2;
-
+	@FindBy(linkText = "link")
+	private WebElement el3;
 
 }
